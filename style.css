@@ -1,0 +1,180 @@
+i {
+        color: #ff2923;
+    }
+input[type=name], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.m1{
+	position:fixed;
+	left:1%;
+	width:auto;
+	height:100%;
+	top:1%;
+	color:#000;
+}
+.m2{
+    position:fixed;
+    right:1%; 
+    width:auto;
+    height:100%;
+    top:1%;
+    color:#000;
+    }
+
+* { box-sizing:border-box; }
+
+figure {
+  animation:wobble 5s ease-in-out infinite;
+  transform-origin:center center;
+  transform-style:preserve-3d;
+}
+
+@keyframes wobble {
+  0%,100%{ transform:rotate3d(1,1,0,40deg); }
+  25%{ transform:rotate3d(-1,1,0,40deg); }
+  50%{ transform:rotate3d(-1,-1,0,40deg); }
+  75%{ transform:rotate3d(1,-1,0,40deg); }
+}
+h1 {
+  animation:glow 10s ease-in-out infinite;
+}
+h1 {
+  display:block;
+  width:90%;
+  line-height:1.5;
+  font:900 35px 'Concert One', sans-serif;
+  position:absolute;
+  text-align: center;
+  color:#fff;
+}
+
+@keyframes glow {
+  0%,100%{ text-shadow:0 0 30px red; }
+  25%{ text-shadow:0 0 30px orange; }
+  50%{ text-shadow:0 0 30px forestgreen; }
+  75%{ text-shadow:0 0 30px cyan; }
+}
+
+h1:nth-child(2){ transform:translateZ(5px); }
+h1:nth-child(3){ transform:translateZ(10px);}
+h1:nth-child(4){ transform:translateZ(15px); }
+h1:nth-child(5){ transform:translateZ(20px); }
+h1:nth-child(6){ transform:translateZ(25px); }
+h1:nth-child(7){ transform:translateZ(30px);}
+h1:nth-child(8){ transform:translateZ(35px); }
+h1:nth-child(9){ transform:translateZ(40px); }
+h1:nth-child(10){ transform:translateZ(45px); }
+
+h2 {
+   font-size: 38px;
+    text-align: center;
+    color:#ff2323;
+    
+    animation: rock infinite 1s;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+}
+h3 {
+    font-size: 30px;
+    text-align: center;
+    padding:1px;
+    margin:1px;
+    color: yellow;
+    text-shadow: 1px 1px silver, -1px -1px orange;
+    animation: fuck infinite 1s;
+    font-family: 'arial', cursive;
+    letter-spacing: 2px;
+}
+    @keyframes fuck 
+    {0% {transform: rotate(-2deg);  }
+  	50% {transform: rotate(2deg);  }
+  	100% {transform: rotate(-2deg);}  
+}
+.wish{	font-weight: normal;
+	font-family: verdana;
+	font-size: 20px;
+    text-align: center;
+    padding:8px;
+    margin:10px;
+    color: yellow;
+    font-family: 'arial', cursive;
+}
+.main1 {
+	color: white;
+	font-weight: bold;
+	font-size: 35px;
+	padding: 0px;
+	animation:colorful 5s ease-in-out infinite;
+  transform-origin:center center;
+  transform-style:preserve-3d;
+  -webkit-text-stroke: .5px white;
+
+}
+
+@keyframes colorful {
+  0%{ color: yellow; }
+  20%{ color: green; }
+  40%{ color: blue; }
+  60%{ color: violet; }
+80%{color: red;}
+100%{color:orange; }
+}
+.busi {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footerbtn {
+ 
+            display: block;
+            line-height: 15px;
+            position: fixed;
+            left:0px;
+            bottom:0px;
+            height:40px;
+            
+border-radius: 15px;
+  box-sizing: border-box;
+  padding: 5px;
+  background:#34af23;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  width:95%;
+ margin-left:10px;
+            margin-right:30px;
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .3);
+            animation: footer infinite linear 1s;
+            -webkit-transform: translate3d(30%,0,0);
+            transform: translate3d(30%,0,0);
+            position: fixed;
+}
+.footerbtn :active {
+            box-shadow: none
+        }
+
+        @-webkit-keyframes footer {
+            from {
+                -webkit-transform: rotateZ(0)
+            }
+            25% {
+                -webkit-transform: rotateZ(1.5deg)
+            }
+            50% {
+                -webkit-transform: rotateZ(0deg)
+            }
+            75% {
+                -webkit-transform: rotateZ(-1.5deg)
+            }
+            to {
+                -webkit-transform: rotateZ(0)
+            }}
